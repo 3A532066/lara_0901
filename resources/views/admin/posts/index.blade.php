@@ -45,7 +45,7 @@
                 <td>{{($post->is_feature)?'v':'x'}}</td>
                 <td>
                   <ahref="{{route('admin.posts.edit',$post->id)}}">編輯</a>
-                  <ahref="#">刪除</a>
+                  <a href="{{ route('admin.posts.destroy', $post->id) }}">刪除</a>
                 </td>
                 </tr>
                  @endforeach
